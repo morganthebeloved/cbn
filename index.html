@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="cbn.css">
+</head>
+<body>
+     <form id="cbn1">
+        <div class="container we">
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="depositor type" style="font-weight: bold;">Depositor Type</label><br>
+                    <br />
+                    <input id="depositor"><br>
+                    <span id="depositorError" class="error"></span>
+                </div>  
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="bank" style="font-weight: bold;">Bank *</label><br>
+                    <input id="bank"><br>
+                    <span id="bankError" class="error"></span>
+                </div> 
+                <div class="col-md-6">
+                    <label for="account name" style="font-weight: bold;">Account Number *</label><br>
+                    <input id="accountname">
+                     <button id="validate" style="font-weight: bold;">validate</button><br>
+                    <span id="accountError" class="error"></span>
+                </div>   
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="account name1" style="font-weight: bold;">Account Name <i class="bi bi-file-lock2"></i></label><br>
+                    <input id="accountname1"><br>
+                    <span id="account1Error" class="error"></span>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="depositor phone number" style="font-weight: bold;">Depositor Number *</label><br>
+                    <input id="depositor1"><br>
+                    <span id="depositor1Error" class="error"></span>
+                </div> 
+                <div class="col-md-6">
+                    <label for="depositor e-mail address" style="font-weight: bold;">Depositor Email *</label><br>
+                    <input id="email"><br>
+                    <span id="emailError" class="error"></span>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <label for="depositor address" style="font-weight: bold;">Depositor Address *</label><br>
+                    <input id="address1">
+                    <span id="addressError1" class="error"></span>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="amount of 200 note" style="font-weight: bold;">Amount of 200 note <i class="bi bi-file-lock2"></i></label><br>
+                    <input onkeyup="rate()" id="two"><br>
+                    <span id="twoo" class="error"></span>
+                </div> 
+                <div class="col-md-6">
+                    <label for="amount of 500 note" style="font-weight: bold;">Amount of 500 note <i class="bi bi-file-lock2"></i></label><br>
+                    <input onkeyup="rate()" id="five"><br>
+                    <span id="fives" class="error"></span>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="amount of 1000 note" style="font-weight: bold;">Amount of 1000 note *</label><br>
+                    <input onkeyup="rate()" id="one"><br>
+                    <SPan id="one" class="error"></SPan>
+                </div> 
+                <div class="col-md-6">
+                    <label for="total deposit" style="font-weight: bold;">Total deposit <i class="bi bi-file-lock2"></i></label><br>
+                    <input  id="total"><br>
+                    <span id="totalError" class="error"></span>
+                </div> 
+            </div>
+            <button type="submit" style="font-weight: bold;">Submit</button><br><br>
+            <span id="go"></span>
+            
+            
+        </div>
+       
+        <style>
+            .error{
+                color: red;
+            }
+        </style>
+    </form>
+   
+    <script src="cbn.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
